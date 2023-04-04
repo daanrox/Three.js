@@ -6,7 +6,7 @@ import { PerspectiveCamera } from './PerspectiveCamera.js';
 
 /**
  * Camera for rendering cube maps
- *	- renders scene into axis-aligned cube
+ *	- renders scene into axis-aligned cubes
  *
  * @author alteredq / http://alteredqualia.com/
  */
