@@ -1,5 +1,6 @@
 /**
  * @author mrdoob / http://mrdoob.com/
+ * @co-author daanrox / http://daanrox.com/
  */
 
 function AudioAnalyser( audio, fftSize ) {
