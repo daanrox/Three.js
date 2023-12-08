@@ -1,36 +1,19 @@
-three.js
-========
+# Three.js
+Biblioteca JavaScript 3D
 
-[![Latest NPM release][npm-badge]][npm-badge-url]
-[![License][license-badge]][license-badge-url]
-[![Dependencies][dependencies-badge]][dependencies-badge-url]
-[![Dev Dependencies][devDependencies-badge]][devDependencies-badge-url]
-[![Build Status](https://travis-ci.org/mrdoob/three.js.svg?branch=dev)](https://travis-ci.org/mrdoob/three.js)
-[![Language Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/mrdoob/three.js.svg?label=code%20quality)](https://lgtm.com/projects/g/mrdoob/three.js/)
+#### Objetivo ####
 
-#### JavaScript 3D library ####
+O objetivo deste projeto é criar uma biblioteca 3D leve e fácil de usar. A biblioteca oferece renderizadores Canvas 2D, SVG, CSS3D e WebGL.
 
-The aim of the project is to create an easy to use, lightweight, 3D library. The library provides Canvas 2D, SVG, CSS3D and WebGL renderers.
+### Uso ###
 
-[Examples](http://threejs.org/examples/) &mdash;
-[Documentation](http://threejs.org/docs/) &mdash;
-[Wiki](https://github.com/mrdoob/three.js/wiki) &mdash;
-[Migrating](https://github.com/mrdoob/three.js/wiki/Migration-Guide) &mdash;
-[Questions](http://stackoverflow.com/questions/tagged/three.js) &mdash;
-[Forum](https://discourse.threejs.org/) &mdash;
-[Gitter](https://gitter.im/mrdoob/three.js) &mdash;
-[Slack](https://threejs-slack.herokuapp.com/)
-
-### Usage ###
-
-Download the [minified library](http://threejs.org/build/three.min.js) and include it in your HTML, or install and import it as a [module](http://threejs.org/docs/#manual/introduction/Import-via-modules),
-Alternatively see [how to build the library yourself](https://github.com/mrdoob/three.js/wiki/Build-instructions).
+Faça o download da [biblioteca minificada](http://threejs.org/build/three.min.js) e inclua-a em seu HTML, ou instale e importe como um [módulo](http://threejs.org/docs/#manual/introduction/Import-via-modules).
+Alternativamente, veja [como construir a biblioteca você mesmo](https://github.com/mrdoob/three.js/wiki/Build-instructions).
 
 ```html
 <script src="js/three.min.js"></script>
 ```
-
-This code creates a scene, a camera, and a geometric cube, and it adds the cube to the scene. It then creates a `WebGL` renderer for the scene and camera, and it adds that viewport to the document.body element. Finally, it animates the cube within the scene for the camera.
+Este código cria uma cena, uma câmera, e um cubo geométrico, adicionando-o à cena. Em seguida, cria um renderizador `WebGL` para a cena e a câmera, e adiciona essa viewport ao elemento document.body. Por fim, anima o cubo dentro da cena para a câmera.
 
 ```javascript
 var camera, scene, renderer;
@@ -57,31 +40,14 @@ function init() {
 	document.body.appendChild( renderer.domElement );
 
 }
-
-function animate() {
-
-	requestAnimationFrame( animate );
-
-	mesh.rotation.x += 0.01;
-	mesh.rotation.y += 0.02;
-
-	renderer.render( scene, camera );
-
-}
 ```
 
-If everything went well you should see [this](https://jsfiddle.net/f2Lommf5/).
+## Contato
+Se tiver dúvidas ou precisar de mais informações, sinta-se à vontade para entrar em contato:
+- Email : [contato@daanrox.com](mailto:contato@daanrox.com)
+- LinkedIn: [https://www.linkedin.com/in/daanrox/](Daanrox)
 
-### Change log ###
+--- 
 
-[releases](https://github.com/mrdoob/three.js/releases)
+"Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos."
 
-
-[npm-badge]: https://img.shields.io/npm/v/three.svg
-[npm-badge-url]: https://www.npmjs.com/package/three
-[license-badge]: https://img.shields.io/npm/l/three.svg
-[license-badge-url]: ./LICENSE
-[dependencies-badge]: https://img.shields.io/david/mrdoob/three.js.svg
-[dependencies-badge-url]: https://david-dm.org/mrdoob/three.js
-[devDependencies-badge]: https://img.shields.io/david/dev/mrdoob/three.js.svg
-[devDependencies-badge-url]: https://david-dm.org/mrdoob/three.js#info=devDependencies
